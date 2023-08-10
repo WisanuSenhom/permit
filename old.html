@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head><title>google_form_liff</title></head>
+ 
+<body>
+ 
+<script src="https://static.line-scdn.net/liff/edge/2.1/liff.js"></script>
+ 
+<script>
+ 
+  async function getUserProfile() {
+   const profile = await liff.getProfile()
+   window.location.replace(
+     `https://docs.google.com/forms/d/e/1FAIpQLSePzrX4WBXRwD75yBAX4fgtOg9XDuh_lsvPWSlqrI1ysAzdPA/viewform?usp=pp_url
+&entry.1175438387=${profile.userId}
+&entry.139498755=${profile.displayName}
+&entry.1450192920=${profile.statusMessage}
+&entry.311567131=${profile.pictureUrl}`
+     );
+   }
+ 
+  async function main() {
+     await liff.init({ liffId: "1654797991-3mwO60Od" })
+       if (liff.isLoggedIn()) {
+         getUserProfile()
+       } else {
+         liff.login()
+       }
+   }
+   main()
+ </script>
+ 
+ </body>
+</html>
