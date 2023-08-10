@@ -12,11 +12,15 @@
    const profile = await liff.getProfile()
    window.location.replace(
      `https://docs.google.com/forms/d/e/1FAIpQLSd-EY2whijHWLx_s4BUUUZXSi5I14w2ysFPA11we0_1s_bBYA/viewform?usp=pp_url
-    &entry.32283324=${profile.userId}&entry.1077140652=${profile.displayName}
-    &entry.2012119827=17.8915852,103.8742125&entry.43344358=0+%E0%B8%A1.
-    &entry.867557134=form&entry.560330824=%E0%B8%A5%E0%B8%87%E0%B9%80%E0%B8%A7%E0%B8%A5%E0%B8%B2%E0%B8%A2%E0%B9%89%E0%B8%AD%E0%B8%99%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%87`
+ &entry.32283324=${profile.userId}
+ &entry.1077140652=${profile.displayName}
+ &entry.272605849=2023-08-10
+ &entry.239060675=08:30
+ &entry.37901483=2023-08-10
+ &entry.881774517=16:30`
      );
    }
+
  
   async function main() {
      await liff.init({ liffId: "1654797991-3mwO60Od" })
