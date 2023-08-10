@@ -8,15 +8,15 @@
  
 <script>
 
-  async function getUserProfile() {
+ async function getUserProfile() {
    const profile = await liff.getProfile()
    window.location.replace(
      `https://docs.google.com/forms/d/e/1FAIpQLSd-EY2whijHWLx_s4BUUUZXSi5I14w2ysFPA11we0_1s_bBYA/viewform?usp=pp_url
  &entry.32283324=${profile.userId}
  &entry.1077140652=${profile.displayName}
- &entry.272605849=2023-08-10
+ &entry.272605849=new Date().toLocaleDateString('en-CA')
  &entry.239060675=08:30
- &entry.37901483=2023-08-10
+ &entry.37901483=new Date().toLocaleDateString('en-CA')
  &entry.881774517=16:30`
      );
    }
