@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head><title>forgot-timestamp</title></head>
+ 
+<body>
+ 
+<script src="https://static.line-scdn.net/liff/edge/2.1/liff.js"></script>
+ 
+<script>
+
+ async function getUserProfile() {
+   const profile = await liff.getProfile()
+   window.location.replace(
+     `https://docs.google.com/forms/d/e/1FAIpQLSc1cimdHrA-g1eSPyYHz5oYDhyfnlOT49wyjIp_dryaX98RUQ/viewform?usp=pp_url
+     &entry.195620054=${new Date().toLocaleDateString('en-CA')}
+     &entry.1595578753=${profile.userId}
+     &entry.1336093512=${profile.displayName}`
+     );
+   }
+
+ 
+  async function main() {
+     await liff.init({ liffId: "1654797991-3mwO60Od" })
+       if (liff.isLoggedIn()) {
+         getUserProfile()
+       } else {
+         liff.login()
+       }
+   }
+   main()
+ </script>
+ 
+ </body>
+</html>
