@@ -1,7 +1,7 @@
 async function getProfile() {
     document.getElementById("loading").style.display = "block";
    const profile = await liff.getProfile()
-   const xurl = `https://script.google.com/macros/s/AKfycbyB9-NUwszqnFiGghC-avzUS0nglje20_xLgF6_ossLTmEaElHyKHpf1tg-p9bWdLE3XA/exec?user=${profile.userId}&name=${profile.displayName}`;
+   const xurl = `https://script.google.com/macros/s/AKfycbzPZ15Ufez7zuWaZItw6hCU6PdWcxfAaNS2XD2yW2zBGMASvFWZLzSC7PqQIpnZ45c8HQ/exec?user=${profile.userId}&name=${profile.displayName}`;
    
    const records = await fetch(xurl);
    const data = await records.json();
@@ -9,21 +9,18 @@ async function getProfile() {
     let tab = '';
     data.user.forEach(function (user) {
         
-        tab += `<tr>
+      tab += `<tr>
             <td>${user.date}</td>
             <td>${user.office}</td>
-            <td>${user.fireciful}</td>
-            <td>${user.spray}</td>
-            <td>${user.force}</td>
-            <td>${user.body}</td>
-            <td>${user.pressure}</td>
-            <td>${user.obstacle}</td>
+            <td>${user.cool}</td>
+            <td>${user.range}</td>
+            <td>${user.temp}</td>
             <td>${user.details}</td>
             <td>${user.name}</td>
             <td>${user.dupdate}</td>      
-          
-        </tr>`
+           </tr>`
     });
+    
     console.log(tab)
     document.getElementById('tbody').innerHTML = tab;
     document.getElementById("loading").style.display = "none";
@@ -32,12 +29,9 @@ async function getProfile() {
         "columns": [
             { "data": 'date' },
             { "data": 'office' },
-            { "data": 'fireciful' },
-            { "data": 'spray' },
-            { "data": 'force' },
-            { "data": 'body' },
-            { "data": 'pressure' },
-            { "data": 'obstacle' },
+            { "data": 'cool' },
+            { "data": 'range' },
+            { "data": 'temp' },
             { "data": 'details' },
             { "data": 'name' },
             { "data": 'dupdate' }
@@ -53,7 +47,7 @@ async function getProfile() {
             'copy', 'csv', 'excel', 'print'
         ]
         
-    });
+    });  
    
 }
 
