@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ตู้เย็น</title>
+       
+</head>
+
+<body onload="main()">
+    <div class="container-fluid">
+        <h3>อุณหภูมิตู้เย็น</h3>
+
+        <table class="table table-striped" id="userTable">
+            <thead>
+                 <th>วันที่</th>
+                 <th>หน่วยงาน</th>
+                <th>ถังดับเพลิง</th>
+                <th>สายฉีด</th>
+                 <th>คันบังคับ</th>
+                <th>ตัวถัง</th>
+                <th>เกจแรงดัน</th>
+                <th>สิ่งกีดขวาง</th>
+                <th>เพิ่มเติม</th>
+                <th>ผู้ตรวจสอบ</th>
+                <th>dupdate</th>
+            </thead>
+            <tbody id="tbody">
+               
+            <!-- <thead>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Work</th>
+                <th>Datein</th>
+                <th>Dateout</th>
+                <th>Distance</th>
+                <th>Note</th>
+               
+            </thead> -->
+        </table>
+        <div id="loading">
+            <img src="https://media.tenor.com/XK37GfbV0g8AAAAi/loading-cargando.gif" style="display: block; margin: 0 auto;">
+          </div>
+    </div>
+ 
+    <script src="fireTable.js"></script>
+    <script src="https://static.line-scdn.net/liff/edge/2.1/liff.js"></script>
+<!-------------------------------- CDN's css-------------------------------------->
+
+<!-- Bootstrap & fontawesome css -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css" />
+<!-- Datatable css -->
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.18/css/jquery.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/autofill/2.3.0/css/autoFill.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.5/css/fixedColumns.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.2/css/responsive.dataTables.min.css" />
+<!-------------------------------- CDN's js-------------------------------------->
+<!-- Boostrap & fontawesome js-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!-- Datatable js -->
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/autofill/2.3.0/js/dataTables.autoFill.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/fixedcolumns/3.2.5/js/dataTables.fixedColumns.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/scroller/2.0.0/js/dataTables.scroller.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/responsive/2.2.2/js/dataTables.responsive.min.js"></script>
+
+<script type="text/javascript" src="https://cdn.datatables.net/buttons/2.4.1/js/dataTables.buttons.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/buttons/2.4.1/js/buttons.print.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script> 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script> 
+<script type="text/javascript" src="https://cdn.datatables.net/buttons/2.4.1/js/buttons.html5.min.js"></script> 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script> 
+</body>
+</html>
