@@ -1,4 +1,4 @@
-async function getData() {
+async function getProfile() {
     document.getElementById("loading").style.display = "block";
    const profile = await liff.getProfile()
    const xurl = `https://script.google.com/macros/s/AKfycbyB9-NUwszqnFiGghC-avzUS0nglje20_xLgF6_ossLTmEaElHyKHpf1tg-p9bWdLE3XA/exec?user=${profile.userId}&name=${profile.displayName}`;
