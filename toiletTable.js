@@ -1,7 +1,7 @@
 async function getProfile() {
     document.getElementById("loading").style.display = "block";
    const profile = await liff.getProfile()
-   const xurl = `https://script.google.com/macros/s/AKfycbyB9-NUwszqnFiGghC-avzUS0nglje20_xLgF6_ossLTmEaElHyKHpf1tg-p9bWdLE3XA/exec?user=${profile.userId}&name=${profile.displayName}`;
+   const xurl = `https://script.google.com/macros/s/AKfycbxOUI7OLZaX2b7tRyjp0Hl5GyVdLyU_4Rqk6YxsZz0F-U1eFXkvEmr0NuYjzPaWUsIy5A/exec?user=${profile.userId}&name=${profile.displayName}`;
    
    const records = await fetch(xurl);
    const data = await records.json();
@@ -9,15 +9,20 @@ async function getProfile() {
     let tab = '';
     data.user.forEach(function (user) {
         
-        tab += `<tr>
+          tab += `<tr>
             <td>${user.date}</td>
             <td>${user.office}</td>
-            <td>${user.fireciful}</td>
-            <td>${user.spray}</td>
-            <td>${user.force}</td>
-            <td>${user.body}</td>
-            <td>${user.pressure}</td>
-            <td>${user.obstacle}</td>
+            <td>${user.room}</td>
+            <td>${user.range}</td>
+            <td>${user.score}</td>
+            <td>${user.floor}</td>
+            <td>${user.wall}</td>
+            <td>${user.toilet}</td>
+            <td>${user.water}</td>
+            <td>${user.tap}</td>
+            <td>${user.bin}</td>
+            <td>${user.soap}</td>
+            <td>${user.towel}</td>
             <td>${user.details}</td>
             <td>${user.name}</td>
             <td>${user.dupdate}</td>      
@@ -32,12 +37,18 @@ async function getProfile() {
         "columns": [
             { "data": 'date' },
             { "data": 'office' },
-            { "data": 'fireciful' },
-            { "data": 'spray' },
-            { "data": 'force' },
-            { "data": 'body' },
-            { "data": 'pressure' },
-            { "data": 'obstacle' },
+            { "data": 'room' },
+            { "data": 'range' },
+            { "data": 'score' },
+            { "data": 'floor' },
+            { "data": 'wall' },
+            { "data": 'toilet' },
+            { "data": 'water' },
+            { "data": 'tap' },
+            { "data": 'mirror' },
+            { "data": 'bin' },
+            { "data": 'soap' },
+            { "data": 'towel' },
             { "data": 'details' },
             { "data": 'name' },
             { "data": 'dupdate' }
@@ -54,7 +65,6 @@ async function getProfile() {
         ]
         
     });
-   
 }
 
 async function main() {
