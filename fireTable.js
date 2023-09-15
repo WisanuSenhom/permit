@@ -1,7 +1,10 @@
 async function getData() {
     document.getElementById("loading").style.display = "block";
-    const records = await fetch('https://script.google.com/macros/s/AKfycbyB9-NUwszqnFiGghC-avzUS0nglje20_xLgF6_ossLTmEaElHyKHpf1tg-p9bWdLE3XA/exec');
-    const data = await records.json();
+   const profile = await liff.getProfile()
+   const xurl = `https://script.google.com/macros/s/AKfycbyB9-NUwszqnFiGghC-avzUS0nglje20_xLgF6_ossLTmEaElHyKHpf1tg-p9bWdLE3XA/exec?user=${profile.userId}&name=${profile.displayName}`;
+   
+   const records = await fetch(xurl);
+   const data = await records.json();
     
     let tab = '';
     data.user.forEach(function (user) {
@@ -53,4 +56,14 @@ async function getData() {
     });
    
 }
+
+async function main() {
+    await liff.init({ liffId: "1654797991-3mwO60Od" })
+      if (liff.isLoggedIn()) {
+        getProfile() 
+      } else {
+        liff.login()
+      }
+  }
+  main()
 
