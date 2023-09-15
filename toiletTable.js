@@ -55,6 +55,7 @@ async function getProfile() {
                 ],
            "processing": true,
            "responsive":true,
+        "order": [[ 0, 'desc' ], [ 3, 'asc' ]],
         //    "colReorder": true,
         //    "fixedColumns": true,
         //    "fixedHeader": true,
