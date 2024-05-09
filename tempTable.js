@@ -17,7 +17,8 @@ async function getProfile() {
             <td>${user.temp}</td>
             <td>${user.details}</td>
             <td>${user.name}</td>
-            <td>${user.dupdate}</td>      
+            <td>${user.dupdate}</td>  
+            <td>${user.ref}</td>    
            </tr>`
     });
     
@@ -34,11 +35,12 @@ async function getProfile() {
             { "data": 'temp' },
             { "data": 'details' },
             { "data": 'name' },
-            { "data": 'dupdate' }
+            { "data": 'dupdate' },
+            { "data": 'ref' }
                 ],
            "processing": true,
            "responsive":true,
-           "order": [[ 0, 'asc' ], [ 3, 'asc' ]],
+           "order": [[ 8, 'desc' ], [ 3, 'asc' ]],
         //    "colReorder": true,
         //    "fixedColumns": true,
         //    "fixedHeader": true,
