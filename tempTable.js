@@ -40,7 +40,7 @@ async function getProfile() {
                 ],
            "processing": true,
            "responsive":true,
-           "order": [[ 8, 'desc' ], [ 3, 'asc' ]],
+           "order": [[ 8, 'asc' ], [ 3, 'asc' ]],
         //    "colReorder": true,
         //    "fixedColumns": true,
         //    "fixedHeader": true,
