@@ -45,18 +45,12 @@ async function getProfile() {
         //    "fixedColumns": true,
         //    "fixedHeader": true,
         //    "keys": true,
- "dom": 'Plfrtip',
+ "dom": 'lBfrtip', // เพิ่ม 'l' เพื่อแสดง "Show [n] entries"
                 "lengthMenu": [ [10, 30, 70, 100, 150, -1], [10, 30, 70, 100, 150, "ทั้งหมด"] ], // รายการตัวเลือกในปุ่ม
                 "buttons": [
                     'excel', 'print',
                 ],
-                "pageLength": 70,
-         "rowGroup": {
-        "dataSrc": 0
-         },
-          "searchPanes": {
-        "layout": 'columns-4' // กำหนดรูปแบบการแสดงผลของ SearchPanes
-    }
+                "pageLength": 70
         
     });  
    
