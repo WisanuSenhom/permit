@@ -54,6 +54,10 @@ async function getProfile() {
          "rowGroup": {
         "dataSrc": "date", // กำหนดให้จัดกลุ่มตามคอลัมน์ "date"
         "dataSrc": "cool" // กำหนดให้จัดกลุ่มตามคอลัมน์ "cool"
+         },
+          "searchPanes": {
+        "layout": 'columns-4' // กำหนดรูปแบบการแสดงผลของ SearchPanes
+    }
         
     });  
    
