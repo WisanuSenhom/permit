@@ -22,7 +22,7 @@ async function getProfile() {
            </tr>`
     });
     
-    console.log(tab)
+   // console.log(tab)
     document.getElementById('tbody').innerHTML = tab;
     document.getElementById("loading").style.display = "none";
     $('#userTable').DataTable({
