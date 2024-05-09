@@ -50,7 +50,10 @@ async function getProfile() {
                 "buttons": [
                     'excel', 'print',
                 ],
-                "pageLength": 70
+                "pageLength": 70,
+         "rowGroup": {
+        "dataSrc": "date", // กำหนดให้จัดกลุ่มตามคอลัมน์ "date"
+        "dataSrc": "cool" // กำหนดให้จัดกลุ่มตามคอลัมน์ "cool"
         
     });  
    
