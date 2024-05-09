@@ -52,8 +52,7 @@ async function getProfile() {
                 ],
                 "pageLength": 70,
          "rowGroup": {
-        "dataSrc": "date", // กำหนดให้จัดกลุ่มตามคอลัมน์ "date"
-        "dataSrc": "cool" // กำหนดให้จัดกลุ่มตามคอลัมน์ "cool"
+        "dataSrc": 0
          },
           "searchPanes": {
         "layout": 'columns-4' // กำหนดรูปแบบการแสดงผลของ SearchPanes
