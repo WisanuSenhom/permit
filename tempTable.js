@@ -45,7 +45,7 @@ async function getProfile() {
         //    "fixedColumns": true,
         //    "fixedHeader": true,
         //    "keys": true,
- "dom": 'PlBfrtip', // เพิ่ม 'l' เพื่อแสดง "Show [n] entries"
+ "dom": 'Plfrtip',
                 "lengthMenu": [ [10, 30, 70, 100, 150, -1], [10, 30, 70, 100, 150, "ทั้งหมด"] ], // รายการตัวเลือกในปุ่ม
                 "buttons": [
                     'excel', 'print',
