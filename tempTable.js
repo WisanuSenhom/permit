@@ -38,17 +38,17 @@ async function getProfile() {
                 ],
            "processing": true,
            "responsive":true,
-           "order": [[ 0, 'desc' ], [ 3, 'asc' ]],
+           "order": [[ 0, 'asc' ], [ 3, 'asc' ]],
         //    "colReorder": true,
         //    "fixedColumns": true,
         //    "fixedHeader": true,
         //    "keys": true,
  "dom": 'lBfrtip', // เพิ่ม 'l' เพื่อแสดง "Show [n] entries"
-                "lengthMenu": [ [10, 30, 50, 100, 150, -1], [10, 30, 50, 100, 150, "ทั้งหมด"] ], // รายการตัวเลือกในปุ่ม
+                "lengthMenu": [ [10, 30, 70, 100, 150, -1], [10, 30, 70, 100, 150, "ทั้งหมด"] ], // รายการตัวเลือกในปุ่ม
                 "buttons": [
                     'excel', 'print',
                 ],
-                "pageLength": 30
+                "pageLength": 70
         
     });  
    
