@@ -43,10 +43,12 @@ async function getProfile() {
         //    "fixedColumns": true,
         //    "fixedHeader": true,
         //    "keys": true,
-           "dom": 'Bfrtip',
-           "buttons": [
-            'copy', 'csv', 'excel', 'print'
-        ]
+ "dom": 'lBfrtip', // เพิ่ม 'l' เพื่อแสดง "Show [n] entries"
+                "lengthMenu": [ [10, 30, 50, 100, 150, -1], [10, 30, 50, 100, 150, "ทั้งหมด"] ], // รายการตัวเลือกในปุ่ม
+                "buttons": [
+                    'excel', 'print',
+                ],
+                "pageLength": 30
         
     });  
    
